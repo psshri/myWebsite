@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Kindly fill this form!</title>
+</head>
+<body>	
+	<form>
+		<fieldset>
+			<legend style="font-size: 25px; font-weight: bold;">Kindly fill this form!</legend>
+			<label for="fn">First Name: </label><br>
+			<input id="fn" type="text" name="firstName" placeholder="Enter your first name" required autofocus><br>
+			<label for="ln">Last Name: </label><br>
+			<input id="ln" type="text" name="lastName" placeholder="Enter your last name" required><br>
+			<label for="age">Age: </label><br>
+			<input type="number" name="age" id="age" placeholder="Enter your age" required><br><br>
+
+			<label>Select your gender: </label><br>
+			<input type="radio" name="gender" id="male" value="male" required>
+			<label for="male">Male</label><br>
+			<input type="radio" name="gender" id="female" value="female" required>
+			<label for="female">Female</label><br>
+			<input type="radio" name="gender" id="other" value="other" required>
+			<label for="other">Other</label><br><br>
+
+			<label for="year">Select your year of study: </label>
+			<select id="year" name="year" required>
+				<option value="first">First</option>
+				<option value="second">Second</option>
+				<option value="third">Third</option>
+				<option value="fourth">Fourth</option>
+				<option value="fifth">Fifth</option>
+			</select><br><br>
+
+			<input type="checkbox" name="int1" id="int1" value="Data Science">
+			<label for="int1">Data Science</label><br>
+			<input type="checkbox" name="int2" id="int2" value="Finance">
+			<label for="int2">Finance</label><br>
+			<input type="checkbox" name="int3" id="int3" value="Business Development">
+			<label for="int3">Business Development</label><br>
+			<input type="checkbox" name="int4" id="int4" value="Civil Services">
+			<label for="int4">Civil Services</label><br>
+			<input type="checkbox" name="int5" id="int5" value="IES/GATE">
+			<label for="int5">IES/GATE</label><br>
+			<input type="checkbox" name="int6" id="int6" value="Research">
+			<label for="int6">Research</label><br>
+			<input type="checkbox" name="int7" id="int7" value="Operations">
+			<label for="int7">Operations</label><br><br>
+
+			<label for="bday">Enter your birth date & time: </label>
+			<input type="datetime-local" name="bday" id="bday" value="bday" max="1999-12-31" required><br><br>
+
+			<label for="favcolor">Enter your favorite color: </label>
+			<input type="color" id="favcolor" name="favcolor" value="favcolor" required><br><br>
+
+
+			<label for="message">Enter your message here: </label>
+			<textarea name="message" rows="10" cols="30" id="message" placeholder="Your message goes here..." required></textarea><br><br>
+
+			<label for="linkedin">Enter your LinkedIn handle: </label>
+			<input type="url" name="linkedin" id="linedin" required><br><br>
+
+			<label for="website">Enter your website's domain name (if any): </label>
+			<input type="url" name="website" id="website"><br><br>
+
+			<label></label>
+
+			<label for="email">Enter your e-mail: </label>
+			<input type="email" name="email" placeholder="xyz@abc.com" id="email" required><br><br>
+
+			<label for="phoneNum">Enter your phone number: </label>
+			<input type="phoneNum" name="phone" id="phoneNum" pattern="[6-9]{1}[0-9]{9}" required><br>
+
+			<br>
+			<input type="submit" value="Submit">
+		</fieldset>
+
+	</form>
+</body>
+</html>

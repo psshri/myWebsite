@@ -1,3 +1,22 @@
+body
+{
+	/*background-color: lightgrey;*/
+	font-family: verdana;
+}
+
+title
+{
+	background-color: skyblue;
+}
+
+#idHeading
+{
+	color: mediumseagreen;
+	text-align: center;
+	border: 4px solid mediumseagreen;
+	padding: 2px;
+}
+
 a:link
 {
 	color: blue;
@@ -14,8 +33,8 @@ a:visited
 
 a:hover
 {
-	color: white;
-	background-color: transparent;
+	color: orange;
+	background-color: grey;
 	text-decoration: none;
 }
 
@@ -25,3 +44,88 @@ a:active
 	background-color: transparent;
 	text-decoration: none;
 }
+
+table, td, th
+{
+	border: 1px solid black;
+	border-collapse: collapse;
+	padding: 2px;
+}
+
+td
+{
+	text-align: center;
+}
+
+th
+{
+	color: white;
+	background-color: black;
+}
+
+tr:nth-child(even)
+{
+	background-color: #eee;
+}
+
+tr:nth-child(odd)
+{
+	background-color: #fff;
+}
+
+#idUL1
+{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color:#333333;
+	color:white;
+}
+
+#idUL1 li
+{
+	float:left;
+}
+
+#idUL1 li a
+{
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 16px;
+	text-decoration: none;
+}
+
+#idUL1 li a:hover
+{
+	color:orange;
+	background-color: green;
+}
+
+#idUL2 li a
+{
+	display: block;
+	color: black;
+	text-decoration: none;
+}
+
+#idUL2 li a:hover
+{
+	color:orange;
+	background-color: green;
+}
+
+#idDiv1
+{
+	background-color: silver;
+	padding: 10px;
+	border: 10px;
+}
+
+#idDiv1 p
+{
+	color:white;
+	font-size: 12px;
+}
+
