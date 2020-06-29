@@ -2,9 +2,20 @@
 <html>
 <head>
 	<title>Kindly fill this form!</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>	
-	<form>
+
+	<ul style="padding-left: 275px" id="idUL1">
+		<li><a href="home.html" target="_self">Home</a></li>
+		<li><a href="blogs.html" target="_self">Blogs</a></li>
+		<li><a href="books.html" target="_self">Books I've read</a></li>
+		<li><a href="digitalContent.html" target="_self">Digital content I've watched</a></li>
+		<li><a href="aboutMe.html">About me</a></li>
+		<li><a href="contactMe.html">Contact me</a></li>
+	</ul><br>
+
+	<form autocomplete="on">
 		<fieldset>
 			<legend style="font-size: 25px; font-weight: bold;">Kindly fill this form!</legend>
 			<label for="fn">First Name: </label><br>
@@ -12,7 +23,7 @@
 			<label for="ln">Last Name: </label><br>
 			<input id="ln" type="text" name="lastName" placeholder="Enter your last name" required><br>
 			<label for="age">Age: </label><br>
-			<input type="number" name="age" id="age" placeholder="Enter your age" required><br><br>
+			<input type="number" name="age" id="age" placeholder="Enter your age" min=18 required><br><br>
 
 			<label>Select your gender: </label><br>
 			<input type="radio" name="gender" id="male" value="male" required>
@@ -21,6 +32,9 @@
 			<label for="female">Female</label><br>
 			<input type="radio" name="gender" id="other" value="other" required>
 			<label for="other">Other</label><br><br>
+
+			<label for="bday">Enter your birth date & time: </label>
+			<input type="datetime-local" name="bday" id="bday" value="bday" max="1999-12-31" required><br><br>
 
 			<label for="year">Select your year of study: </label>
 			<select id="year" name="year" required>
@@ -31,6 +45,7 @@
 				<option value="fifth">Fifth</option>
 			</select><br><br>
 
+			<label>Mark your area<small>(s)</small> of interest<small>(s)</small></label><br>
 			<input type="checkbox" name="int1" id="int1" value="Data Science">
 			<label for="int1">Data Science</label><br>
 			<input type="checkbox" name="int2" id="int2" value="Finance">
@@ -46,14 +61,11 @@
 			<input type="checkbox" name="int7" id="int7" value="Operations">
 			<label for="int7">Operations</label><br><br>
 
-			<label for="bday">Enter your birth date & time: </label>
-			<input type="datetime-local" name="bday" id="bday" value="bday" max="1999-12-31" required><br><br>
-
 			<label for="favcolor">Enter your favorite color: </label>
 			<input type="color" id="favcolor" name="favcolor" value="favcolor" required><br><br>
 
 
-			<label for="message">Enter your message here: </label>
+			<label for="message">Enter your message here: </label><br><br>
 			<textarea name="message" rows="10" cols="30" id="message" placeholder="Your message goes here..." required></textarea><br><br>
 
 			<label for="linkedin">Enter your LinkedIn handle: </label>
@@ -71,9 +83,16 @@
 			<input type="phoneNum" name="phone" id="phoneNum" pattern="[6-9]{1}[0-9]{9}" required><br>
 
 			<br>
-			<input type="submit" value="Submit">
+			<button type="submit" value="submit">Submit</button>
 		</fieldset>
 
 	</form>
+
+	<h2>Or write to me at:</h2>
+	<address>
+		Flat No. 201, Sukh Sagar Apartments (Block A),<br>
+		Janki Nagar 2-A, Indore <br>
+		MP-452001 <br>
+	</address>
 </body>
 </html>
